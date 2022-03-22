@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/zeroing.css" />
+        <link rel="stylesheet" href="../css/container.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/main.css" />        
+        <link rel="stylesheet" href="../css/main_info_block.css" />  
+        <link rel="stylesheet" href="../css/test.css" />        
+        <link rel="stylesheet" href="../css/footer.css" />
+        <link rel="shortcut icon" href="../images/header/logo.png" />
+        <title>ХЗОШ №167 - Попереднє тестування для вступу до школи</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header_container _container">
+                    <div class="header_logo_title">
+                        <div class="header_logo">
+                            <a href="../index.html"><img class="logo_img" src="../images/header/logo.png" alt="Logo"></a>
+                        </div>
+                        <div class="header_title" id="h_title_1">
+                            Харківська загальноосвітня школа І-ІІІ ступенів № 167 Харківської міської ради Харківської області
+                        </div>
+                        <div class="header_title" id="h_title_2">
+                            Хзош І-ІІІ ступенів № 167 Харківської міської ради Харківської області
+                        </div>
+                        <div class="header_title" id="h_title_3">
+                            Хзош І-ІІІ ступенів № 167
+                        </div>
+                    </div>
+                    <div class="header_navigation">
+                        <div class="header_navigation__menu menu">
+                            <button class="menu__dropbutton">Меню</button>
+                            <ul class="menu__nav_items">
+                                <li class="nav_item"><a href="../index.html" class="nav_a">Головна</a></li>
+                                <li class="nav_item"><a href="osob_navch_proc.html" class="nav_a">Особливості навчального процесу</a></li>
+                                <li class="nav_item"><a href="osnas.html" class="nav_a">Оснащеність засобами навчання</a></li>
+                                <li class="nav_item"><a href="vipuskniki.html" class="nav_a">Наші випускники</a></li>
+                                <li class="nav_item"><a href="traditions.html" class="nav_a">Наші традиції</a></li>
+                                <li class="nav_item"><a href="organization.html" class="nav_a">Організація дозвілля</a></li>
+                                <li class="nav_item"><a href="osob_priyomu.html" class="nav_a">Особливості прийому в школу</a></li>
+                                <li class="nav_item"><span class="nav_a active">Пройти тестування</span></li>                         
+                            </ul>
+                        </div>
+                        
+                        <ul class="main_nav">
+                            <li class="nav_item"><a href="../index.html" class="nav_a">Головна</a></li>
+                            <li class="nav_item"><a href="osob_navch_proc.html" class="nav_a">Особливості навчального процесу</a></li>
+                            <li class="nav_item"><a href="osnas.html" class="nav_a">Оснащеність засобами навчання</a></li>
+                            <li class="nav_item"><a href="vipuskniki.html" class="nav_a">Наші випускники</a></li>
+                            <li class="nav_item"><a href="traditions.html" class="nav_a">Наші традиції</a></li>
+                            <li class="nav_item"><a href="organization.html" class="nav_a">Організація дозвілля</a></li>
+                            <li class="nav_item"><a href="osob_priyomu.html" class="nav_a">Особливості прийому в школу</a></li>
+                                <li class="nav_item"><span class="nav_a active">Пройти тестування</span></li>                      
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            
+            <main class="main">
+                <div class="main__pagename _container">
+                    <h1 class="main__pagename-title">Попереднє тестування для вступу до школи</h1>
+                    <p class="main__pagename-text article__text"><em>Як дізнатися самостійно, без допомоги фахівця, чи готова дитина до школи? В цьому допоможе тестування, створене нашими викладачами початкових класів та затверджене Міністерством освіти, яке Ви разом зі своєю дитиною можете пройти прямо зараз та дізнатися рівень готовності для вступу до нашої школи. Бажаємо успіхів!</em></p>
+                </div>
+
+                <div class="main__info-block info-block">
+                    <div class="info-block__page_content page_content _container">
+                        
+                        <div class="test_container">
+                            <form class="form_1" method="post" onsubmit="return false;" >
+                
+                            <!--onsubmit="return false;" - не обновлять страницу, вставлять в тег <form>-->
+                
+                                <div class="cont visible">
+                                    <h3 class="cont-title">Знайомство</h3>
+                                    
+                                    <p class="cont-text"><em>Введіть будь-ласка ім'я дитини</em></p>
+                
+                                    <input class="cont__child-name" placeholder="Ім'я дитини" type="text" name="child_name" id="child_name" value="" required pattern="[А-Яа-яЁёІіЇїЄє]{2,20}">
+                                    
+                                    <span id="name_text" style="color: red;"></span>
+                                </div>
+                
+                              <div class="q-indicator"></div>
+                              <div class="questions invisible"></div>
+                
+                
+                              <div class="btns">
+                                <button class="invisible" type="button" name="back" id="back">Назад</button>
+                                <button class="visible" type="reset" name="reset" id="reset">Очистити</button>
+                                <button class="visible" type="button" name="next" id="start">Почати тестування</button>
+                                <button class="invisible disabled" type="button" name="next" id="next" disabled>Продовжити</button>
+                                <button class="invisible" type="button" name="submit" id="submit">Показати результати</button>
+                              </div>
+                            </form>
+                
+                            <div class="results invisible" >
+                                <h3 class="results__title">Результати тестування</h3>
+                                <table class="results__table">
+                                  <tr>
+                                    <td class="results__table_right">Правильних відповідей: </td>
+                                    <td id="right"></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="results__table_wrong">Неправильних відповідей: </td>
+                                    <td id="wrong"></td>
+                                  </tr>
+                                </table>
+                                <p class="result"></p>
+                                <a id="restart" href="test.html">Пройти тестування ще раз!</a>
+                            </div>
+                
+                            <div class="prev_results invisible">
+                              <h3 class="prev_results_title style="text-align: center;">Результати останнього попереднього тестування</h3>
+                              <table class="prev_results_table">
+                                <thead>
+                                          <td>Ім'я дитини</td>
+                                          <td>Правильних відповідей</td>
+                                          <td>Неправильних відповідей</td>
+                                          <td>Результат</td>
+                                      </thead>
+                              </table>
+                            </div>
+                
+                          </div>
+
+
+
+                        
+                        
+
+                    </div>
+                </div>                
+            </main>
+
+            <footer class="footer">
+                <div class="footer__content _container">
+                    <div class="footer__item">
+                        <h3 class="footer__item_title">
+                            Наша адреса
+                        </h3>
+                        <div class="footer__item_content">
+                            Україна, 61121, м. Харків, вулиця Гарібальді, буд. 9
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__item_title">
+                            Ми на Google Maps
+                        </h3>
+                        <div class="footer__item_content">
+                            <iframe class="footer__item_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.2859878291238!2d36.35091461559878!3d50.00599467941659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709eb013cc067%3A0x9b9f21d70870f9b9!2z0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0YnQtdC-0LHRgNCw0LfQvtCy0LDRgtC10LvRjNC90LDRjyDRiNC60L7Qu9CwIOKEliAxNjc!5e0!3m2!1sru!2sua!4v1647260131976!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__item_title">
+                            Контакти
+                        </h3>
+                        <div class="footer__item_content">
+                            <table class="footer__table">
+                                <tr>
+                                    <td class="footer__table_first_column"><img src="../images/footer/contacts/phone.png" alt="phone" class="footer__table_icon" style="border: 1px solid #45ac75 ; background-color: #fff;"></td>
+                                    <td class="footer__table_second_column"><a class="footer__table_link" href="tel:(057)725-16-41">(057)725-16-41</a><br><a class="footer__table_link" href="tel:(057)725-15-33">(057)725-15-33</a></td> 
+                                </tr>                                
+                                <tr>
+                                    <td class="footer__table_first_column"><img src="../images/footer/contacts/instagram.png" alt="insta" class="footer__table_icon"></td>
+                                    <td class="footer__table_second_column"><a href="" class="footer__table_link">school167</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="footer__table_first_column"><img src="../images/footer/contacts/FaceBook.png" alt="facebook" class="footer__table_icon"></td>
+                                    <td class="footer__table_second_column"><a href="" class="footer__table_link">school167</a></td>
+                                </tr>
+                            </table> 
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__item_title">
+                            Відгуки та побажання
+                        </h3>
+                        <div class="footer__item_content">
+                            <form class="footer__item_feedback feedback">
+                                <span class="feedback__title">Ваше ім'я</span>
+                                
+                                <input type="text" class="feedback__name" pattern="^[А-Яа-яЁёІіЇїЄє\s]+$" placeholder="Введіть ім'я" title="Тільки букви українського алфавіту!" required>
+                                
+                                <span class="feedback__title">Ваш e-mail</span>
+                                
+                                <input type="text" class="feedback__email" placeholder="Введіть e-mail" required>
+                                
+                                <span class="feedback__title">Ваш відгук або побажання</span>
+                                
+                                <textarea name="feedback" cols="30" rows="5" class="feedback__textarea" placeholder="Напишіть ваш відгук..." required pattern="^[А-Яа-яЁёІіЇїЄє\s]+$" title="Тільки букви українського алфавіту!"></textarea>
+                                
+                                <button type="submit" class="feedback__button">Відправити</button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        
+
+        <script src="../js/dropdown_menu.js" type="text/javascript"></script>
+        <script src="../js/test.js" type="text/javascript"></script>
+    </body>
+</html>
